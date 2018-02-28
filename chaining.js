@@ -7,5 +7,5 @@
 
 const integers = [23, 15, 6, 3, 11, 20, 18, 7, 21, 1, 29, 10, 12, 8];
 
-integers.sort(function(a,b){return b-a});
-console.log(integers);
+let choppedNumbers = integers.sort(function(a,b){return b-a}).slice(4).map(x => (x * 1.5)-1);
+console.log(choppedNumbers);
